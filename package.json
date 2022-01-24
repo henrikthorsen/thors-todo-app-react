@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "starter for react",
   "source": "src/index.html",
-  "homepage": "https://littlestudent.github.io/thors-todo-app-react/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "parcel build"
+    "build": "parcel build --public-url ."
   },
   "repository": {
     "type": "git",
