@@ -1,0 +1,214 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+	margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+	height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* THORS CONTENT ADDED BENEATH THIS LINE */
+
+/* global */
+body {
+  margin: 8px;
+}
+
+.color-salmon {
+  color: salmon;
+}
+
+.color-gray {
+  color: gray;
+}
+
+.background-color-dark-mode {
+  background-color: black;
+}
+
+.background-color-active-button {
+  background-color: salmon;
+}
+
+.background-color-inactive-button {
+  background-color: gray;
+}
+
+header {
+  margin-top: 8px;
+}
+
+.text-color-dark-mode {
+  color: white;
+} 
+
+.button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-self-center {
+  align-self: center; 
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* list */
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+li {
+  padding: 8px 16px;
+  height: 40px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.display-none {
+  display: none;
+}
+
+.background-color-undone {
+  background-color: salmon;
+}
+
+.background-color-done {
+  background-color: lightgray;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.todo-title {
+  margin-left: 24px;
+}
+
+/* input div */
+#input-field {
+  position: absolute;
+  bottom: 16px;
+  left: 0px;
+  width: 100%;
+  padding: 0 8px;
+}
+
+#todo-title-input {
+  flex: 1;
+  padding: 8px 16px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  /* background-color: lightpink; */
+}
+
+#btn-add-todo {
+  margin-left: 8px;
+  padding: 0;
+  padding: 8px 16px;
+  /* width: 32px; */
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  /* background-color: transparent;  */
+  background-color: cadetblue;
+}
+
+#icon-add-todo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  /* border: 2px solid black; */
+  background-color: cadetblue;
+} 
