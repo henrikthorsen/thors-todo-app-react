@@ -22984,15 +22984,14 @@ const App = ()=>{
     const state = {
         todoList: []
     };
-    handleInput = ()=>{
-        const val = document.getElementById("todo-title-input").value;
-        const updatedTodoList = undefined.state.todoList.concat(val);
-        undefined.setState({
-            todoList: updatedTodoList
-        });
-        document.getElementById("todo-title-input").value = ""; //sets the input value to blank again
-    };
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+    /* handleInput = () => {
+    const val = document.getElementById("todo-title-input").value;
+    const updatedTodoList = this.state.todoList.concat(val);
+    this.setState({
+      todoList: updatedTodoList,
+    });
+    document.getElementById("todo-title-input").value = ""; //sets the input value to blank again
+  }; */ return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Header, {
             }, void 0, false, {
