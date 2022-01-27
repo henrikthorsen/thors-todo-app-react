@@ -7,7 +7,7 @@
     "start": "parcel",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "parcel build --public-url ."
+    "build": "parcel build --public-url /thors-todo-app-react"
   },
   "repository": {
     "type": "git",
