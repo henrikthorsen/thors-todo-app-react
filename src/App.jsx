@@ -105,14 +105,14 @@ export const Main = (props) => {
 export const App = () => {
   const state = { todoList: [] };
   
-  handleInput = () => {
+  /* handleInput = () => {
     const val = document.getElementById("todo-title-input").value;
     const updatedTodoList = this.state.todoList.concat(val);
     this.setState({
       todoList: updatedTodoList,
     });
     document.getElementById("todo-title-input").value = ""; //sets the input value to blank again
-  };
+  }; */
   
   return (
     <div>
