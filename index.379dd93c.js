@@ -22981,7 +22981,7 @@ const Main = (props)=>{
 };
 _c5 = Main;
 const App = ()=>{
-    state = {
+    const state = {
         todoList: []
     };
     handleInput = ()=>{
