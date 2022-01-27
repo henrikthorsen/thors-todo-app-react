@@ -103,7 +103,7 @@ export const Main = (props) => {
 // <InputField myInput={this.handleInput}/>
 
 export const App = () => {
-  state = { todoList: [] };
+  const state = { todoList: [] };
   
   handleInput = () => {
     const val = document.getElementById("todo-title-input").value;
