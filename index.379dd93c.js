@@ -22787,19 +22787,18 @@ parcelHelpers.export(exports, "Header", ()=>Header
 );
 parcelHelpers.export(exports, "SubHeader", ()=>SubHeader
 );
-parcelHelpers.export(exports, "List", ()=>List
-);
-parcelHelpers.export(exports, "InputField", ()=>InputField
-);
-parcelHelpers.export(exports, "Main", ()=>Main
+parcelHelpers.export(exports, "Form", ()=>Form
 );
 parcelHelpers.export(exports, "App", ()=>App
 );
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 // start the server: npm start
 // location: http://localhost:1234/
+var _react = require("react");
 var _appCss = require("./App.css"); //added by Thor
+var _s = $RefreshSig$();
 const toggleMode = ()=>{
+    //let mode = dark ? "background-color-dark-mode text-color-dark-mode" : "" ;   
     const bodyElement = document.querySelector("body"); //the body element is saved in a variable
     const h1Element = document.querySelector("h1"); //the h1 element is saved in a variable
     const btnModeElement = document.querySelector("#btn-change-mode"); //the button element is saved in a variable
@@ -22816,12 +22815,14 @@ const Button = (props)=>{
         children: props.text
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 47,
+        lineNumber: 52,
         columnNumber: 5
     }, undefined));
 };
 _c = Button;
 const Header = (props)=>{
+    //const [mode, setMode] = useState("Dark");
+    //let modeBackgroundColor = state.dark ? "" : "";
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("header", {
         className: "flex justify-content-space-between",
         children: [
@@ -22832,7 +22833,7 @@ const Header = (props)=>{
                         children: "Grey "
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 56,
+                        lineNumber: 64,
                         columnNumber: 13
                     }, undefined),
                     " ",
@@ -22841,14 +22842,14 @@ const Header = (props)=>{
                         children: "Salmon"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 56,
+                        lineNumber: 64,
                         columnNumber: 55
                     }, undefined),
                     " Todos"
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 56,
+                lineNumber: 64,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Button, {
@@ -22858,13 +22859,13 @@ const Header = (props)=>{
                 onClickAction: toggleMode
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 57,
+                lineNumber: 65,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 55,
+        lineNumber: 63,
         columnNumber: 5
     }, undefined));
 };
@@ -22880,7 +22881,7 @@ const SubHeader = ()=>{
                 text: "All"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 65,
+                lineNumber: 73,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Button, {
@@ -22889,7 +22890,7 @@ const SubHeader = ()=>{
                 text: "Undone"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 66,
+                lineNumber: 74,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Button, {
@@ -22898,92 +22899,130 @@ const SubHeader = ()=>{
                 text: "Done"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 67,
+                lineNumber: 75,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 64,
+        lineNumber: 72,
         columnNumber: 5
     }, undefined));
 };
 _c2 = SubHeader;
-const List = ()=>{
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        id: "list-wrapper",
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
-            id: "todos"
-        }, void 0, false, {
-            fileName: "src/App.jsx",
-            lineNumber: 78,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/App.jsx",
-        lineNumber: 77,
-        columnNumber: 5
-    }, undefined));
-};
-_c3 = List;
-const InputField = (props)=>{
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        id: "input-field",
-        className: "flex justify-content-space-between align-items-center",
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                id: "todo-title-input",
-                type: "text",
-                placeholder: "Enter todo",
-                autoFocus: true
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 87,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Button, {
-                id: "btn-add-todo",
-                text: "Add"
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 89,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.jsx",
-        lineNumber: 86,
-        columnNumber: 5
-    }, undefined));
-};
-_c4 = InputField;
-const Main = (props)=>{
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("main", {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(List, {
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 98,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(InputField, {
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 99,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.jsx",
-        lineNumber: 97,
-        columnNumber: 5
-    }, undefined));
-};
-_c5 = Main;
-const App = ()=>{
-    const state = {
-        todoList: []
+const Form = ()=>{
+    _s();
+    const [userInput, setUserInput] = _react.useState("");
+    const [todo, setTodo] = _react.useState("");
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        setTodo(userInput);
+        setUserInput("");
     };
+    // console.log(userInput);
+    // if ({todo} == '' ) {
+    //   return;
+    // }
+    return(// <div id="input-field" className="flex justify-content-space-between align-items-center">
+    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                id: "list-wrapper",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
+                    id: "todos",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                        className: "todo undone background-color-undone flex justify-content-space-between align-items-center",
+                        children: [
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                className: "status-wrapper flex align-items-center",
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("i", {
+                                        className: "far fa-circle btn-mark-as-done"
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 114,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                                        className: "todo-title",
+                                        children: todo
+                                    }, void 0, false, {
+                                        fileName: "src/App.jsx",
+                                        lineNumber: 115,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 113,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("i", {
+                                className: "fas fa-times btn-remove"
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 117,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 112,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 111,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 110,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                onSubmit: handleSubmit,
+                id: "form",
+                className: "flex justify-content-space-between align-items-center",
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                        value: userInput,
+                        onChange: (e)=>setUserInput(e.target.value)
+                        ,
+                        id: "todo-title-input",
+                        type: "text",
+                        placeholder: "Enter todo",
+                        autoFocus: true
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 123,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                        id: "btn-add-todo",
+                        children: "Submit"
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 125,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 122,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/App.jsx",
+        lineNumber: 109,
+        columnNumber: 5
+    }, undefined));
+};
+_s(Form, "7kl5ChhrQx19x/WdUs5XDR6/t3Y=");
+_c3 = Form;
+const App = ()=>{
+    //const state = { todoList: [] };
     /* handleInput = () => {
     const val = document.getElementById("todo-title-input").value;
     const updatedTodoList = this.state.todoList.concat(val);
@@ -22996,44 +23035,42 @@ const App = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Header, {
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 119,
+                lineNumber: 156,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(SubHeader, {
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 120,
+                lineNumber: 157,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Main, {
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Form, {
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 121,
+                lineNumber: 158,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 118,
+        lineNumber: 155,
         columnNumber: 5
     }, undefined));
 };
-_c6 = App;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6;
+_c4 = App;
+var _c, _c1, _c2, _c3, _c4;
 $RefreshReg$(_c, "Button");
 $RefreshReg$(_c1, "Header");
 $RefreshReg$(_c2, "SubHeader");
-$RefreshReg$(_c3, "List");
-$RefreshReg$(_c4, "InputField");
-$RefreshReg$(_c5, "Main");
-$RefreshReg$(_c6, "App");
+$RefreshReg$(_c3, "Form");
+$RefreshReg$(_c4, "App");
 
   $parcel$ReactRefreshHelpers$a46b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"3jZUD","./App.css":"l08wk","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"l08wk":[function() {},{}],"ciiiV":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"3jZUD","react":"4mchR","./App.css":"l08wk","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"l08wk":[function() {},{}],"ciiiV":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
